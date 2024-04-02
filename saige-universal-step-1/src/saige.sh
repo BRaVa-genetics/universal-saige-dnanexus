@@ -23,12 +23,12 @@ main() {
         -t $trait_type \
         --genotypePlink "genotype" \
         --phenoFile in/pheno_list/* \
-        --phenoCol $pheno \
-        --covarColList $covariates \
+        --phenoCol "$pheno" \
+        --covarColList "$covariates" \
         --categCovarColList "${categorical_covariates}" \
         --sampleIDs in/sample_ids/* \
         --sampleIDCol "IID" \
-        --outputPrefix ${output_prefix} \
+        --outputPrefix "${output_prefix}" \
         --isSingularity false \
         --sparseGRM GRM \
         --sparseGRMID in/GRM_samples/*
